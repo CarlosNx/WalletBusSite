@@ -1,14 +1,29 @@
-	$(document).ready(function(){
+/*	$(document).ready(function(){
 		$(".menu-icon").on("click", function(){
 			$("nav ul").toggleClass("showing");
 		});
 	});
-	//MENU-SCROOLL effect//
+*/    
 	$(window).on("scroll", function(){
 		if($(window).scrollTop()) {
-			$('nav').addClass('black');
+			$('nav').addClass('secondary');
 			}
 				else{
-					$('nav').removeClass('black');
+					$('nav').removeClass('secondary');
 				}
-		})
+		});
+        
+
+/*
+$(window).scroll(function(){
+    var top = $(window).scrollTop();
+        if(top >= 60){
+            $("nav").addClass('secondary');
+        }
+    else
+        if($("nav").hasClass('secondary')){
+            $("nav").removeClass('secondary');
+        }
+    
+});
+*/
