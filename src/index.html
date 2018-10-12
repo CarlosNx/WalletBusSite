@@ -10,9 +10,11 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -57,8 +59,8 @@
         </div>
     </nav>
 
-<section id="home" class="header-home">
-    <svg version="1.1" id="curve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 304" enable-background="new 0 0 1920 304" xml:space="preserve">
+    <section id="home" class="header-home">
+        <svg version="1.1" id="curve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 304" enable-background="new 0 0 1920 304" xml:space="preserve">
         <path d="M0,274c0,0,195.28-174,579.28-124s580.147-76.408,736-108C1463.28,12,1920,0,1920,0v304H0V274z"/>
         </svg>
         <section class="cantainer">
@@ -84,65 +86,182 @@
         </section>
     </section>
     <section>
-        <div class="container">
-           <div class="row">
-              <section class="col-md-12 py-5 title text-center">
-                  <h1>Funcionalidades</h1>
-              </section>
-               <div class="col-md-3 col-sm-6">
-                   <div class="servicebox">
-                       <br><br>
-                       <div class="service-icon">
-                         <i class="fas fa-map-marker-alt"></i>
-                       </div><br>
-                       <h3 class="title">Localização de<br>Validadores</h3>
-                       <p class="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                       </p>
-                   </div>
-               </div>
-               <div class="col-md-3 col-sm-6">
-                   <div class="servicebox">
-                       <br><br>
-                       <div class="service-icon">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                       </div><br>
-                       <h3 class="title">Historico de <br> Compras</h3>
-                       <p class="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                       </p>
-                   </div>
-                   
-               </div>
-               <div class="col-md-3 col-sm-6">
-                   <div class="servicebox">
-                       <br><br>
-                       <div class="service-icon">
-                         <i class="far fa-credit-card"></i>
-                       </div><br>
-                       <h3 class="title">Compra de<br>Créditos</h3>
-                       <p class="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                   </div> 
-               </div>
-               <div class="col-md-3 col-sm-6">
-                   <div class="servicebox">
-                       <br><br>
-                       <div class="service-icon">
-                         <i class="fas fa-bus"></i>
-                       </div><br>
-                       <h3 class="title">Consulta de <br>Saldo</h3>
-                       <p class="description">
-                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                       </p>
-                   </div>
-               </div>
-           </div> 
+        <div class="container pb-4">
+            <div class="row">
+                <section class="col-md-12 title text-center">
+                    <h1>Funcionalidades</h1>
+                </section>
+                <div class="col-md-3 col-sm-6">
+                    <div class="servicebox">
+                        <br><br>
+                        <div class="service-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div><br>
+                        <h3 class="title">Localização de<br>Validadores</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="servicebox">
+                        <br><br>
+                        <div class="service-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div><br>
+                        <h3 class="title">Historico de <br> Compras</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="servicebox">
+                        <br><br>
+                        <div class="service-icon">
+                            <i class="far fa-credit-card"></i>
+                        </div><br>
+                        <h3 class="title">Compra de<br>Créditos</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="servicebox">
+                        <br><br>
+                        <div class="service-icon">
+                            <i class="fas fa-bus"></i>
+                        </div><br>
+                        <h3 class="title">Consulta de <br>Saldo</h3>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    
+    <section class="bn section-box br-img py-5" data-overlay-dark="4">
+        <h1 class="title-s text-center">Dúvidas Frequentes</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 half-content bg-gray">
+                    <div class="box-white">
+
+                        <div class="content mb-50">
+                            <h5 class="mb-15"><b>Como faço para criar minha conta?</b></h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and type setting industry when an unknown printer took a galley.</p>
+                        </div>
+
+                        <!-- accordion -->
+
+                        <div class="accordion">
+
+                            <div class="item active">
+                                <div class="title">
+                                    <h6>Posso adicionar um Cartão que não esteja vinculado ao meu CPF? </h6>
+                                </div>
+                                <div class="accordion-info active">
+                                    <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ubique maluisset vel te, his dico vituperata ut. in quodsi Ubique maluisset vel te, his dico vituperata ut in quodsi Ubique.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <h6>Após a confirmação do pagamento, meu Cartão já está pronto para uso?</h6>
+                                </div>
+                                <div class="accordion-info">
+                                    <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ubique maluisset vel te, his dico vituperata ut.vituperata ut in quodsi in quodsiUbique maluisset vel te, his dico vituperata ut in quodsiUbique. in quodsi vulputate.</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="title">
+                                    <h6>O que é um ponto de recarga?</h6>
+                                </div>
+                                <div class="accordion-info">
+                                    <p>Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ubique maluisset vel te, his dico vituperata ut. in vituperata ut in quodsi maluisset vel te, his dico vituperata ut in quodsi Ubique. in quodsi vulputate.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center py-3 title">
+                    <h1 class="aos-init aos-animate title" data-aos="fade-right" data-aos-offset="20">Fale!</h1>
+                    <h4 class="aos-init aos-animate" data-aos="fade-right" data-aos-offset="20">Precisa falar conosco? Entre em contato.</h4>
+                </div>
+                <div class="col-sm-12 col-sm-offset-3">
+                    <form method="post" name="userForm" class="ng-pristine ng-invalid ng-invalid-required ng-valid-email">
+                        <div class="form-group aos-init aos-animate title" data-aos="fade-right" data-aos-offset="20">
+                            <label class="control-label" for="name">Nome:</label>
+                            <input ng-model="form.name" type="text" placeholder="Digite seu nome" class="form-control input-lg ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" id="name" name="name" required="required">
+
+                        </div>
+                        <div class="form-group aos-init aos-animate" data-aos="fade-right" data-aos-offset="20">
+                            <label class="control-label" for="email">Email:</label>
+                            <input ng-model="form.email" type="email" placeholder="Digite seu email" class="form-control input-lg ng-pristine ng-untouched ng-empty ng-valid-email ng-invalid ng-invalid-required" id="email" name="email" required="required">
+
+                        </div>
+                        <div class="form-group aos-init aos-animate" data-aos="fade-right" data-aos-offset="20">
+                            <label class="control-label" for="phone">Telefone:</label>
+                            <input ng-model="form.phone" type="text" class="form-control input-lg phone ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" id="phone" name="phone" required="required" placeholder="(xx) xxxx-xxxx" maxlength="15">
+
+                        </div>
+                        <div class="form-group aos-init aos-animate" data-aos="fade-right" data-aos-offset="20">
+                            <label class="control-label" for="message">Mensagem:</label>
+                            <textarea ng-model="form.message" class="form-control input-lg ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" id="message" name="message" cols="30" rows="10" required="required" placeholder="Escreva aqui sua dúvida, crítica ou elogio. Em breve, nossa equipe de atendimento entrará em contato com você."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="text-center aos-init" data-aos="fade-right" data-aos-offset="20">
+                                <button onclick="dataLayer.push({&#39;event&#39;: &#39;Contato Enviado&#39;})" type="submit" ng-disabled="sending" class="btn btn-danger">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                        <div class="alert alert-success fade in text-center ng-hide" ng-show="success">
+
+                            <strong>Sua mensagem foi enviada com sucesso!</strong>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <dir class="container">
+            <div class="row">
+                <div class="py-3 col-md-12">
+                    <p class="text-center text-white"> © Copyright 2018 WalletBus São Luís - MA </p>
+                </div>
+            </div>
+        </dir>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        jQuery(document).ready(function() {
+            $(".accordion").on("click", ".title", function() {
+
+                $(this).next().slideDown();
+
+                $(".accordion-info").not($(this).next()).slideUp();
+
+            });
+
+            $(".accordion").on("click", ".title", function() {
+                $(this).addClass("active").siblings().removeClass("active");
+
+
+            });
+
+        });
+    </script>
     <script src="js/jquery.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
