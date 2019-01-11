@@ -1,6 +1,9 @@
 $cor-padrao: #CC6257;
 $cor-s: #FFFFFF;
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     background-attachment: fixed; 
